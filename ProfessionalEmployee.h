@@ -18,10 +18,12 @@ public:
 		this->MonthlySalary = montlySalary;
 		this->YearsWorked = yearsWorked;
 	};
+	//divide the montly salary into weeks
 	double Employee::WeeklySalary()
 	{
 		return MonthlySalary / 4;
 	}
+	//~52 weeks in a year
 	double Employee::VacationDays()
 	{
 		if (YearsWorked < 1)
